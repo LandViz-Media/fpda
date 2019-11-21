@@ -59,3 +59,36 @@ head(mtcars,3)  #this works
 head(mtcars, n=3)  #so does this
 
 
+# create a new column in mtcars named car_name
+# set car_name equal to the row's name
+# Then delete the data frame's rownames attribute
+
+####fix this #1  ########################################################################################
+#see notes!!!  59:50
+mtcars$car_name = rownames(mtcars)
+rownames(mtcars) <- NULL
+
+
+#find mpg of mtcars
+mean(mtcars$mpg)
+
+#  ?summary returns 5 statistics on a vector/data frame. Use ?Summary to get statistics on mpg, and the whole mtcars data frame
+summary(mtcars$mpg)
+summary(mtcars)
+
+
+#this will display a nice table in a new tab. includes a sort and a filter.
+View(mtcars)   #note the capital V on the word View
+
+
+
+####GUI vs Code###########
+
+#Clear the environment
+mtcars
+#lecture turns on off the packages
+
+
+#Base R vs TidyVerse
+
+
