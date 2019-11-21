@@ -44,8 +44,18 @@ df
 nrow(df) #prints out 3 for the number of rows
 nrow(df)*ncol(df)  #result is 9
 
-
 #delete the column named 'half'
 df$half = NULL  #one solution
 df[3] = NULL  #another solution
 df
+
+
+
+
+####Load in mtcars####
+
+#use ?head to only display the first three lines of mtcars
+head(mtcars,3)  #this works
+head(mtcars, n=3)  #so does this
+
+
