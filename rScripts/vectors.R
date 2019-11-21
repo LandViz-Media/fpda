@@ -1,3 +1,9 @@
+#Ari Lamstein Lecture 11-18-19
+#Vectors
+
+
+
+
 ##### SET UP GLOBAL VARIABLES #####
 
 even_numbers = c(2,4,6,8,10)

@@ -1,5 +1,5 @@
-
-
+#Ari Lamstein Lecture 11-20-19
+#Factors and Lists
 
 ages = c("child", "child", "adult", "senior")
 ages
