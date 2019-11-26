@@ -14,6 +14,8 @@ html, body {
 <script>
 
 </script>
+
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
 </head>
 
 <body>
@@ -36,7 +38,7 @@ if ($mysqli->connect_error) {
 
 $table = 'fpdaTime';
 
-$sql = "SELECT * $table";
+$sql = "SELECT * FROM $table";
 
 
 $result = $mysqli->query($sql);
@@ -45,8 +47,6 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
 	    $cat1 = $row["cat1"];
-
-print $cat1;
 	    $cat1Select .= '<option value="'.$cat1.'">'.$cat1.'</option>';
     }
 }
@@ -59,10 +59,15 @@ $mysqli->close();
 
 
 
-Class: <select id="category1">
+Activity: <select id="category1">
+			<option value="-"></option>
+			<?php print $cat1Select ?>
+		</select>
+
+		Sub Activity: <select id="category2">
 			<option value="-"></option>
 			<option value="Select">-</option>
-			<?php print $cat1Select ?>
+			<?php print $cat2Select ?>
 		</select>
 
 
