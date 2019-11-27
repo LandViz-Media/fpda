@@ -48,13 +48,15 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
 	    $cat1 = $row["cat1"];
 	    $cat1Select .= '<option value="'.$cat1.'">'.$cat1.'</option>';
+
+		$cat2 = $row["cat2"];
+	    $cat2Select .= '<option value="'.$cat2.'">'.$cat2.'</option>';
     }
 }
 
 
 $mysqli->close();
 ?>
-
 
 
 
