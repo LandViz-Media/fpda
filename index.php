@@ -65,11 +65,38 @@ Activity: <select id="category1">
 			<option value="-"></option>
 			<?php print $cat1Select ?>
 		</select>
-
+<br>
 		Sub Activity: <select id="category2">
 			<option value="-"></option>
 			<option value="Select">-</option>
 			<?php print $cat2Select ?>
+		</select>
+
+		Hours: <select id="hours">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+		</select>
+
+		Minutes: <select id="minutes">
+			<option value="0">0</option>
+			<option value="5">5</option>
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			<option value="35">35</option>
+			<option value="40">40</option>
+			<option value="45">45</option>
+			<option value="50">50</option>
+			<option value="55">55</option>
 		</select>
 
 
