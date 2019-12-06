@@ -60,7 +60,6 @@ $mysqli->close();
 
 
 
-
 Activity: <select id="category1">
 			<option value="-"></option>
 			<?php print $cat1Select ?>
