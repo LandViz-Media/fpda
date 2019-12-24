@@ -33,12 +33,10 @@ ages_c
 class(ages_c)
 
 
-
 #### Lists ####
 
 x = list(1, "hello")
 x
-
 
 #Vectors creation with ?c and index with []
 #Factor creation with ?factor and index with []
