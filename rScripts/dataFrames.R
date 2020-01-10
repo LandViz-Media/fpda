@@ -86,9 +86,31 @@ View(mtcars)   #note the capital V on the word View
 
 #Clear the environment
 mtcars
+
 #lecture turns on off the packages
 
 
 #Base R vs TidyVerse
+
+
+data(mtcars)  #this will take it into the global environment
+
+#how many different ways to subset a dataframe?
+  #answer is by position or logical criteria
+  #format is df[row>,<col>]
+
+mtcars[1,1] #this get top left
+mtcars[32,11] #this gets bottom right
+mtcars[nrow(mtcars), ncol(mtcars)] #same as above
+
+mtcars[]
+#get the first row
+mtcars[1,]  #note that mtcars[1] would have gotten first two columns
+mtcars[1,1:ncol(mtcars)] #same as above
+
+#1:27 is the time
+#get all elements of the firtst three rows
+mtcars[1:3, ]
+
 
 
